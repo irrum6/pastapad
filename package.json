@@ -1,0 +1,20 @@
+{
+  "name": "pastapad",
+  "version": "0.0.2",
+  "description": "An example ctrl+c,ctrl+v site",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "irakli",
+  "license": "MIT",
+  "dependencies": {},
+  "repository": {
+    "url": "https://github.com/irrum6/pastapad"
+  },
+  "engines": {
+    "node": "14.x"
+  }
+}

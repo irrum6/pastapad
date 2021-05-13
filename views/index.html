@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasta Here</title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        textarea {
+            display: block;
+        }
+
+        input {
+            display: block;
+        }
+
+        button {
+            display: block;
+            background-color: black;
+            color: white;
+            padding: 0.25rem;
+            border-radius: 0.75rem;
+            width: 10rem;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/dump" method="POST" id="form">
+        <textarea name="pastedata" id="pasta" cols="60" rows="30"></textarea>
+        <!-- <label for="pass">
+            Set password to encrypt text
+        </label>
+        <input type="text" id="pass" placeholder="password, empty means no password"> -->
+        <input type="submit" value="Send">
+    </form>
+    <button id="sender" style ="visibility: hidden;">Send</button>
+    <script>
+        const q = s => document.body.querySelector(s);
+        const on = "addEventListener";
+        q("#sender")[on]("click", () => {
+            console.log(q("textarea").value);
+        });
+    </script>
+</body>
+
+</html>
